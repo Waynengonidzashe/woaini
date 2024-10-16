@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cursive', sans-serif;
+    background-color: #fce4ec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+.envelope {
+    width: 300px;
+    height: 200px;
+    background: #ffebee;
+    position: relative;
+    border: 2px solid #e57373;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.flap {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #e57373;
+    border-radius: 10px 10px 0 0;
+    transform-origin: top;
+    transition: transform 0.8s;
+}
+
+.letter {
+    display: none;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.message {
+    color: #d32f2f;
+}
+
+.signature {
+    display: block;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.response {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #f06292;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ec407a;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    border: 2px solid #f06292;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.thank-you h2 {
+    color: #d81b60;
+}
+
+.open-text {
+    font-size: 24px;
+    color: #d32f2f;
+    font-family: 'Cursive', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

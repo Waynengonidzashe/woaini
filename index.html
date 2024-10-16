@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Go Out With Me?</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("YOUR_USER_ID"); // Replace with your EmailJS User ID
+        })();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="open-text">Open 💌</div>
+
+        <div class="envelope" onclick="openEnvelope()">
+            <div class="flap"></div>
+            <div class="letter">
+                <p class="message">
+                    你好美女，<br><br>
+                    Will you be interested in going out with me? On a date 🥰<br><br>
+                    <span class="signature">Sincerely, Uncle_Drew🏀-{韦恩}</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="response hidden">
+            <h2>Your Reply:</h2>
+            <button class="btn yes" onclick="showThanks('yes')">Yes! 💖</button>
+            <button class="btn no" onclick="showThanks('no')">No 😢</button>
+            <div class="custom-reply">
+                <textarea placeholder="Type your response..."></textarea>
+                <button class="btn send" onclick="sendReply()">Send 💌</button>
+            </div>
+        </div>
+
+        <div class="thank-you hidden">
+            <h2>Thank You for Your Response!</h2>
+            <p>Your reply will be sent to me! 😊</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
